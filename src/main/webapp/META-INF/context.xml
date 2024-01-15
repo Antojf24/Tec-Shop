@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/Tec-Shop"/>
+<Context path="/Tec-Shop">
+    <Resource
+            name="jdbc/TecShop"
+            auth="Container"
+            type="javax.sql.DataSource"
+            maxActive="100"
+            maxIdle="30"
+            maxWait="10000"
+            username="TecShop"
+            password="tecshop"
+            driverClassName="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/TecShop?autoReconnect=true"/>
+</Context>

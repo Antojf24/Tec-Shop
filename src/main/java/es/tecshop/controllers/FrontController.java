@@ -1,6 +1,11 @@
 package es.tecshop.controllers;
 
+import es.tecshop.beans.Product;
+import es.tecshop.daofactory.DAOFactory;
+import es.tecshop.daofactory.IProductsDAO;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,9 +44,30 @@ public class FrontController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String url = "";
-        
-        
-        
+
+        String option = request.getParameter("option");
+
+        switch (option) {
+            case "Tienda":
+                url = "JSP/shop.jsp";
+                DAOFactory daof = new DAOFactory();
+                IProductsDAO pDao = daof.getProductsDAO();
+                
+                List<Product> products = new ArrayList<>();
+                products = pDao.getAllProducts();
+                request.setAttribute("products", products);
+                break;
+            case "Area Personal":
+                url = "JSP/personal.jsp";
+                break;
+            case "Iniciar Sesion":
+                url = "JSP/signUp.jsp";
+                break;
+            case "Registrarse":
+                url = "JSP/logIn.jsp";
+                break;
+        }
+
         request.getRequestDispatcher(url).forward(request, response);
     }
 

@@ -2,3 +2,138 @@
     Author: janto
 */
 
+body{
+    background-color: #151714;
+}
+
+.index{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    background-color: #129FD6;
+}
+
+.space{
+    width: 115px;
+    background-color: #151714;    
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.logo{
+    width: 55px;
+    height: auto;
+}
+
+.search{
+    display: flex;
+}
+
+.sesion{
+    padding: 0 25px;
+    gap: 10px;
+}
+
+.login{
+    background-color: #FFB800;
+}
+
+.login:hover{
+    background-color: #f3a100; 
+}
+
+.row{
+    margin: 25px 0;
+}
+
+.registro {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #07AFFF;
+    border-radius: 4px;
+}
+
+.check {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+#enviar {
+    background-color: #FFB800;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#enviar:hover {
+    background-color: #f3a100;
+}
+
+.productImg{
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+   display: none;
+}
+
+::-webkit-scrollbar-track {
+   background: #222;
+   border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #A7A7A7;
+   border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #A7A7A7;
+}
+
+::-webkit-scrollbar-button {
+   display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .search{
+        display: none;
+    }
+}

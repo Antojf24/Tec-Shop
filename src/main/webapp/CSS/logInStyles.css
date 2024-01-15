@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../IMG/peakpx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #212125;
+    border: 2px solid #DEDFDE;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.logo{
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+.title{
+    color: #DEDFDE;
+}
+
+.accordion-item{
+    background-color: #212125;
+    color: #DEDFDE;
+    border: none;
+}
+
+.accordion-button{
+    background-color: #212125;
+    color: #DEDFDE;
+    outline: none;
+}
+
+.accordion-button[aria-expanded="true"]{
+    background-color: #212125;
+    color: #DEDFDE;
+}
+
+.background{
+    background-color: #212125;
+}
